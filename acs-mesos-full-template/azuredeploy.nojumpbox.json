@@ -45,10 +45,11 @@
     },
     "orchestratorType": {
       "type": "string",
-      "defaultValue": "Mesos",
+      "defaultValue": "openDcosPreview",
       "allowedValues": [
         "Mesos",
-        "SwarmPreview"
+        "SwarmPreview",
+        "openDcosPreview"
       ],
       "metadata": {
         "description": "The type of orchestrator used to manage the applications on the cluster."
