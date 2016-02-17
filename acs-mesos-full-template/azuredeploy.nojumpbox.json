@@ -69,8 +69,9 @@
     },
     "sshRSAPublicKey": {
       "type": "string",
+      "defaultValue": "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCx0m0/wGbwt2N9SNdkFQIMyRH62zYasg0tA/3z+55NmTA03KYIQA/55m2BCHHZsieC9arugK4QXYzdn2N7jzLnpSiYpym89Y9CfgaenjdetWZdfZskFC3yuka7056eueMm239PhYCzDuI1mUoGDjpbP5e6astauGZx9QxRuNmoAmCdKmFExBZ0HNEk6L+c5gZD+yS9m/ux1mNlnQNngz5wmPl+oH0R4pcKfWm6W45JWhjgY494F8piQETERp/zIETkW0Blyt7zn2RAYqSDRSBlZrW2ZG130TKDUlzTfzGSsN6IqJ6jDaDswRQ1AStGLmNp7+WBZe7kAPlDIKiSb4K7 insecure@donttrust.example.com",
       "metadata": {
-        "description": "Configure all linux machines with the SSH RSA public key string.  Your key should include three parts, for example 'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm'"
+        "description": "Configure all linux machines with the SSH RSA public key string.  Defaults to an INSECURE snakeoil SSH key, which corresponds to this private key: https://gist.github.com/lingmann/11fbbc5d064750b642b9 .  Your real key should include three parts, for example 'ssh-rsa AAAAB...snip...UcyupgH azureuser@linuxvm'."
       }
     }
   },
